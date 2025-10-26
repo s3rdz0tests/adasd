@@ -1,0 +1,13 @@
+# .github/workflows/caller.yml
+name: Caller Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-external:
+    uses: TESTORGXs3rdz0/TEST_REPO_1/.github/workflows/recwf.yml@main
+    with:
+      message: 'hello";echo "test'
